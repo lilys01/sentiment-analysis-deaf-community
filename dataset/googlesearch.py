@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import json
 
 QUERY = ('"deaf" OR "hard-of-hearing" OR "hard of hearing" OR "sign language" '
-         'OR "cochlear implant" OR "hearing impaired" -"tone deaf" -"deaf ears"')
+         'OR "cochlear implant" OR "hearing impaired" -"tone deaf" -"deaf ears" -"deaf ear"')
 ARTICLES_PER_PAGE = 10
 
 # Our API key

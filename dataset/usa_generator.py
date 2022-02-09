@@ -129,12 +129,12 @@ while requests < max_requests:
         print(f'Halted due to reaching request maximum: {requests} / {max_requests}')
         break
 
-    if article_delta < 100 and year != start_year:
+    if article_delta < 100 and (year != start_year or 0 == start_quarter):
         max_quarters = 1
         print(f'Shifted out of quarterly mode due to article count: {article_delta}')
 
     # # If there were few, we can wrap up the search
-    if article_delta < 10 and year_delta < 10 and year != start_year:
+    if article_delta < 10 and year_delta < 10 and (year != start_year or 0 == start_quarter):
         year_delta = 10
         print(f'Year delta increased to {year_delta} due to low article count')
 
