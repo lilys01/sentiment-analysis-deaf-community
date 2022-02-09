@@ -16,13 +16,13 @@ with open('cx.json') as f:
     cx = json.load(f)
 
 # The base function we're using to pull data from the Custom Search API
-def query(site, year, start, year_delta=1, **kwargs):
+def query(site, year, start, year_delta=1, start_month='01', end_month='12', **kwargs):
     # Retrieving our custom search engine code
     cse_id = cx[site]
 
     # While the parameter may be called sort, we're actually using it
     #   to filter our data, specifically by date
-    sort_str = f'date:r:{year}0101:{year + year_delta - 1}1231'
+    sort_str = f'date:r:{year}{start_month}01:{year + year_delta - 1}{end_month}31'
 
     # Using the google library to make the API call
     with build("customsearch", "v1", developerKey=api_key) as service:
