@@ -1,4 +1,6 @@
 dataset/*.key
 dataset/*_page.txt
 dataset/cx.json
-.ipynb_checkpoints
+**/__pycache__
+.ipynb_checkpoints/*
+GPUCache/*
