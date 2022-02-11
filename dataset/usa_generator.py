@@ -51,7 +51,7 @@ requests = 0
 # Count determines which page of the current year we're in
 count = max(start_count, 1)
 max_count = count
-while requests < max_requests:
+while requests < max_requests and year > 1950:
     while quarter < max_quarters and requests < max_requests:
         # Doing math to determine start_month
         start_month = quarter * 3 + 1
