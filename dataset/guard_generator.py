@@ -8,7 +8,7 @@ import json
 REQUEST_TPL = ('https://content.guardianapis.com/search?q=('
                '"deaf" "hard-of-hearing" "hard of hearing" "sign language" '
                '"cochlear implant" "hearing impaired") AND NOT '
-               '("tone deaf" "deaf ears")&page={page}'
+               '("tone deaf" "deaf ears" "deaf ear")&page={page}'
                '&page-size={page_size}&api-key={key}')
 ARTICLES_PER_PAGE = 20
 

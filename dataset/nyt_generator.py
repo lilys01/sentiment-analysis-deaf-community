@@ -9,7 +9,7 @@ import json
 REQUEST_TPL = ('https://api.nytimes.com/svc/search/v2/articlesearch.json?'
                'fq=headline:("deaf" "hard-of-hearing" "hard of hearing" '
                '"sign language" "cochlear impant" "hearing impaired" '
-               '-"tone deaf" -"deaf ears") AND day_of_week:'
+               '-"tone deaf" -"deaf ears" -"deaf ear") AND day_of_week:'
                '({first_half}"Sunday" {first_half}"Saturday" {first_half}"Friday")'
                '&page={page}&api-key={key}')
 ARTICLES_PER_PAGE = 10
