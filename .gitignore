@@ -4,3 +4,4 @@ dataset/cx.json
 **/__pycache__
 .ipynb_checkpoints/*
 GPUCache/*
+debug.log
