@@ -1,20 +1,15 @@
-This is your group repo for your final project for COGS108.
+# Measuring Sentiment Surrounding Deafness in the Media
+## Overview
+### Introduction
+This project explores the sentiment of language surrounding the Deaf community in news articles from the last few decades. The news articles included for this analysis were from the following five popular news sources: ABC News, AP News, the Guardian, the New York Times, and USA Today. To examine the sentiment of the language surorunding the Deaf community, the polarity,subjectivity, and key words of individual news sources was examined over time.
+### Conclusion
+After calculating sentiment and polarity scores for articles separated by news source (ABC, AP, Guardian, NY Times, USA Today), we noticed that most articles had a slightly positive sentiment of around 0.1 and some subjectivity of around 0.4. We also explored sentiment over time, observing dips in sentiment in the years 1990, 2013, and 2019. We can conclude that dips in sentiment of news articles are easily influenced by reportings of negative events relating to the Deaf community, such as an ableist Federal Aviation Administration rule proposed to Congress in 1990 and the use of an unqualified interpreter at a memorial in 2013. Given that language is complex, a limitation to the sentiment analysis we did is that it's not always accurate and may rate certain articles more extremely because of keywords used in the article.
 
-This repository is private, and is only visible to the course instructors and your group mates; it is not visible to anyone else.
+To get a better picture of sentiment in news sources, we also decided to examine the use of keywords such as "hearing impaired", "Deaf", "cochlear", and "disabled." The idea was that news sources that used terms that are respectful toward the Deaf community would demonstrate higher sentiment and also encourage their readers to use respectful terms. We used two techniques: keyword frequencies and TF-IDF frequencies. However, the results were inconclusive; we saw some trends, but there was a lot of variance and the data didn't end up being applicable to our research question.
 
-Template notebooks for each component are provided. Only work on the notebook prior to its due date. After each submission is due, move onto the next notebook (For example, after the proposal is due, start working in the Data Checkpoint notebook). 
+We also did statistical analysis, deciding to use nonparametric tests because we did not have enough evidence to conclude our distribution was normal. Using a Spearman correlation test, we can conclude that there is a statistically significant slight positive increase in polarity over time. Using a Kruskal Wallis test to compare the median of different groups, we can further our claim that there was indeed a difference in sentiment over the years.
 
-This repository will be frozen on the final project due date. No further changes can be made after that time.
+Overall, we can conlude that there has been a statistically significant increase in positive sentiment in news articles, with the caveat of our analysis only covering since the 2000s, instead of from the 1980s. This is because we have less news articles about the Deaf community from before the 2000s and therefore a limited ability to find trends. With more data, a more concrete analysis of sentiment before 2000 may be performed.
 
-Your project proposal and final project will be graded based solely on the corresponding project notebooks in this repository.
+The analysis focused on relationships between polarity and time, changes in word over time from the 80s to the present, and ran several statistical tests to determine if there was a significant relationship in the sentiment of language surroundinh. We concluded that we can accept our hypothesis, with the caveat that our analysis only covers the articles since the 2000s because of limited data from prior to the 2000s.
 
-Template Jupyter notebooks have been included, with your group number replacing the XXX in the following file names. For each due date, make sure you have a notebook present in this repository by each due date with the following name (where XXX is replaced by your group number):
-
-- `ProjectProposal_groupXXX.ipynb`
-- `DataCheckpoint_groupXXX.ipynb`
-- `EDACheckpoint_groupXXX.ipynb`
-- `FinalProject_groupXXX.ipynb`
-
-This is *your* repo. You are free to manage the repo as you see fit, edit this README, add data files, add scripts, etc. So long as there are the four files above on due dates with the required information, the rest is up to you all. 
-
-Also, you are free and encouraged to share this project after the course and to add it to your portfolio. Just be sure to fork it to your GitHub at the end of the quarter
